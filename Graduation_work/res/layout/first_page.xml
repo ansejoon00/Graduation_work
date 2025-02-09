@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_background"
+    tools:context=".first_page">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/app_logo" />
+
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Welcome to TuneTailor!!!"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <android.widget.Button
+        android:id="@+id/login_button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/top_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_selector"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <android.widget.Button
+        android:id="@+id/signup_button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_selector"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bottom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:text="Enjoy personalized music recommendations!"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+</RelativeLayout>
