@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_background"
+    android:padding="36dp"
+    tools:context=".Mainmenu">
+
+    <LinearLayout
+        android:id="@+id/line_search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/color_background_insert"
+            android:hint="검색어 입력"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#4D4D4D" />
+
+        <ImageButton
+            android:id="@+id/searchTextButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:contentDescription="검색 버튼"
+            android:src="@drawable/icon_search" />
+
+        <ImageButton
+            android:id="@+id/searchVoiceButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="@null"
+            android:contentDescription="음성 검색 버튼"
+            android:src="@drawable/icon_mike" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_check_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_search_box"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/searchTypeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/songRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@drawable/radio_button_color"
+                android:checked="true"
+                android:text="노래" />
+
+            <RadioButton
+                android:id="@+id/playlistRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@drawable/radio_button_color"
+                android:text="플레이 리스트" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_menu_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_check_box"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/searchMapButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="지도 검색"
+            android:textColor="#FFFFFF" />
+
+        <android.widget.Button
+            android:id="@+id/searchTalkButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="대화 듣기"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resultsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/UserInfoButton"
+        android:layout_below="@id/line_menu_box"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <ImageButton
+        android:id="@+id/UserInfoButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:background="@null"
+        android:src="@drawable/icon_user" />
+</RelativeLayout>
