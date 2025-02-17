@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/color_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/userINFOTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_selector"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="USER INFO"
+        android:textColor="#FFFFFF" />
+
+    <android.widget.Button
+        android:id="@+id/userRecordsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_selector"
+        android:text="기록"
+        android:textColor="#FFFFFF" />
+
+    <android.widget.Button
+        android:id="@+id/userlogoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_selector"
+        android:text="로그아웃"
+        android:textColor="#FFFFFF" />
+
+    <android.widget.Button
+        android:id="@+id/userdeleteAccountButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_selector"
+        android:text="회원 탈퇴"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
