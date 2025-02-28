@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_background"
+    android:padding="16dp"
+    tools:context=".GJ">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/left_arrow" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="음성 인식 모드"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/line_menu_box"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/titleText"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <android.widget.Button
+            android:id="@+id/button_start_recognition"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btn_selector"
+            android:text="음성 인식 시작"
+            android:layout_marginTop="3dp"
+            android:textColor="#FFFFFF" />
+
+        <android.widget.Button
+            android:id="@+id/button_stop_recognition"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="음성 인식 중지"
+            android:layout_marginTop="3dp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_transcription"
+        android:layout_width="374dp"
+        android:layout_height="271dp"
+        android:layout_below="@+id/line_menu_box"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:text="음성 인식 결과가 여기에 표시됩니다."
+        android:textSize="10sp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:id="@+id/line_anal_box"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/text_transcription"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <android.widget.Button
+            android:id="@+id/button_analyze_sentiment"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btn_selector"
+            android:text="감정 분석"
+            android:layout_marginTop="3dp"
+            android:textColor="#FFFFFF" />
+
+        <android.widget.Button
+            android:id="@+id/button_analyze_palylist"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:text="음악 재생"
+            android:layout_marginTop="3dp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_sentiment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="감정 분석 결과가 여기에 표시됩니다."
+        android:layout_below="@+id/line_anal_box"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"/>
+
+</RelativeLayout>
