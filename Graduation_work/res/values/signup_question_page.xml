@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Sign_UP_PHP_Mysql"> </string>
+    <string-array name="question">
+        <item>
+            - 질문을 선택해주세요 -
+        </item>
+        <item>
+            당신의 별명은 무엇입니까?
+        </item>
+        <item>
+            당신의 아버지의 성함은?
+        </item>
+        <item>
+            당신의 보물 1호는?
+        </item>
+        <item>
+            당신의 고향은?
+        </item>
+        <item>
+            당신이 감명깊게 읽은 책은?
+        </item>
+    </string-array>
+
+</resources>
